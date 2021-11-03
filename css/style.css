@@ -1,0 +1,354 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/roboto-v29-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v29-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/roboto-v29-latin-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v29-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/roboto-v29-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v29-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: black;
+}
+.wrapper {
+  max-width: 1119px;
+  margin: 0 auto;
+}
+
+/* Header styles start */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #007765;
+}
+.header_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 85px;
+}
+.header_list {
+  display: flex;
+  flex-wrap: wrap;
+  vertical-align: middle;
+}
+.header_item {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+.header_item:last-child {
+  margin-right: 0;
+}
+.header_link {
+  font-size: 24px;
+  line-height: 28px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.header_link:hover,
+.header_link:focus,
+.header_link:active {
+  opacity: 75%;
+}
+._:hover,
+._:focus,
+._:active {
+  opacity: 100%;
+  font-size: 24px;
+  line-height: 28px;
+}
+/* Header styles end */
+
+.intro {
+  background: url(../img/backgroundImage.jpg) center no-repeat;
+  background-size: cover;
+  alt: "Background";
+  height: 403px;
+  margin-top: 84px;
+}
+.intro_text {
+  font-size: 72px;
+  line-height: 84px;
+  color: white;
+  text-align: center;
+  padding-top: 160px;
+  padding-bottom: 160px;
+  font-weight: 500;
+}
+.problem {
+  background-color: #eeeeee;
+}
+.text_problem {
+  padding-top: 48px;
+  padding-bottom: 16px;
+  text-align: center;
+}
+.problem_p {
+  font-size: 32px;
+  line-height: 37px;
+  padding-bottom: 92px;
+}
+b {
+  font-weight: 700;
+}
+.information___ {
+  background: url(../img/backgroundImage2.jpg) center no-repeat;
+  background-size: cover;
+  alt: "Background";
+  height: 483px;
+}
+.information___text {
+  padding-top: 128px;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  color: #ffffff;
+  max-width: 893px;
+  text-align: center;
+  margin: 0 auto;
+}
+.introducing___text {
+  vertical-align: center;
+  padding-top: 48px;
+  text-align: center;
+  padding-bottom: 16px;
+}
+.introducing___right {
+  font-size: 32px;
+  line-height: 37px;
+  margin-left: 48px;
+  width: 930px;
+  display: inline-block;
+}
+i {
+  font-style: italic;
+}
+.PPC_logo {
+  align-items: left;
+}
+.PPC_logo_text {
+  padding-bottom: 35px;
+}
+h2 {
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 75px;
+  color: #007765;
+}
+.The_team {
+  text-align: center;
+  max-height: 845px;
+  background-color: #eeeeee;
+}
+.The_team_intro {
+  padding-top: 58px;
+  padding-bottom: 56px;
+}
+.photo_text_under {
+  font-size: 24px;
+  line-height: 28px;
+  color: #007765;
+  font-weight: 700;
+}
+.text_under_text {
+  font-style: italic;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+.The_team_photos {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 1110px;
+  height: 596px;
+}
+.photo {
+  padding-bottom: 28px;
+  width: 350px;
+  height: 283px;
+}
+.footer {
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+}
+.footer_text {
+  padding-top: 50px;
+  padding-bottom: 62px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  width: 540px;
+  text-align: center;
+}
+#Main,
+#TheProblem,
+#PiedPiperCoin,
+#TheTeam {
+  padding-top: 55px;
+  margin-top: -55px;
+  -webkit-background-clip: content-box;
+  background-clip: content-box;
+}
